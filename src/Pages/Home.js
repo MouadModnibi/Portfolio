@@ -230,11 +230,11 @@ function Home({ loadingComplete }) {
         </div>
         
         <div ref={btnRef} className="flex flex-col md:flex-row items-start md:items-center gap-6">
-          <a
-            href="/CV.pdf"
-            download="CV.pdf"
-            className="cv-button inline-flex items-center gap-2 group"
-          >
+           <a
+  href={`${process.env.PUBLIC_URL}/CV.pdf`}
+  download="CV.pdf"
+  className="cv-button inline-flex items-center gap-2 group"
+>
             <svg
               className="w-5 h-5 transition-transform group-hover:translate-y-1"
               fill="none"
